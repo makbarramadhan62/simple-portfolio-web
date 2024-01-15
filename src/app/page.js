@@ -73,7 +73,7 @@ export default function Home() {
                 <AiFillGithub />
               </a>
             </div>
-            <div className="relative mx-auto bg-gradient-to-b from-cyan-500 rounded-full w-80 h-80 mt-8 overflow-hidden">
+            <div className="relative mx-auto bg-gradient-to-b from-cyan-500 rounded-full w-80 h-80 mt-8 overflow-hidden hover:grayscale hover:scale-110 transition-all ease-in-out duration-500 cursor-pointer">
               <Image src={profil} alt="profil-image" />
             </div>
           </section>
@@ -81,7 +81,7 @@ export default function Home() {
           <section className="py-24">
             <div className="text-center py-8">
               <h3 className="text-2xl font-bold dark:text-gray-200">
-                Specialist
+                Interest
               </h3>
               <p className="text-sm font-semibold text-gray-800 py-4 dark:text-gray-200">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.

@@ -25,19 +25,24 @@ export default function Home() {
         <main className="container mx-auto px-10 ">
           <section>
             <nav className="py-10 mb-12 flex justify-between">
-              <Image src={logo} alt="logo" width={65} className="dark:invert" />
+              <Image
+                src={logo}
+                alt="logo"
+                width={65}
+                className="dark:invert hover:scale-110 hover:-translate-y-1 transition-all ease-in-out duration-500 cursor-pointer"
+              />
               <ul className="flex items-center gap-4">
-                <li>
+                <li className="hover:scale-110 hover:-translate-y-1 transition-all ease-in-out duration-500">
                   <BsFillMoonStarsFill
                     className="cursor-pointer text-xl dark:text-white"
                     onClick={() => setDarkMode(!darkMode)}
                   />
                 </li>
-                <li>
+                <li className="hover:scale-105 transition-all ease-in-out duration-500">
                   <a
                     href="https://drive.google.com/file/d/1lr-tnTHyDB9frexXZrtry3fsgu_ahZlB/view?usp=drive_link"
                     target="blank"
-                    className="bg-cyan-500 text-white font-semibold px-4 py-2 rounded-lg"
+                    className="bg-cyan-500 text-white font-semibold px-4 py-2 rounded-lg "
                   >
                     Resume
                   </a>
@@ -173,9 +178,10 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="text-center mt-8">
+              <div className="text-center mt-8 hover:scale-105 transition-all ease-in-out duration-500">
                 <a
-                  href="#"
+                  href="https://drive.google.com/file/d/15TNNjQscxAsyz7z0pD6nd7eDbQusf8Jw/view?usp=drive_link"
+                  target="blank"
                   className="bg-cyan-500 text-white font-semibold px-4 py-2 rounded-lg"
                 >
                   Lihat Semua
@@ -185,12 +191,12 @@ export default function Home() {
           </section>
 
           <footer className="py-8">
-            <p class="font-medium text-xs text-slate-500 text-center">
-              Dibuat dengan <span class="text-pink-500">❤️</span>
+            <p className="font-medium text-xs text-slate-500 text-center">
+              Dibuat dengan <span className="text-pink-500">❤️</span>
               <a
                 href="https://www.instagram.com/marmdhn_/"
                 target="_blank"
-                class="font-bold text-primary"
+                className="font-bold text-primary"
               >
                 Muhammad Akbar Ramadhan
               </a>
@@ -198,7 +204,7 @@ export default function Home() {
               <a
                 href="https://tailwindcss.com"
                 target="_blank"
-                class="font-bold text-sky-500"
+                className="font-bold text-sky-500"
               >
                 tailwind CSS
               </a>

@@ -32,7 +32,7 @@ export default function Home() {
                 className="dark:invert hover:scale-110 hover:-translate-y-1 transition-all ease-in-out duration-500 cursor-pointer"
               />
               <ul className="flex items-center gap-4">
-                <li className="hover:scale-110 hover:-translate-y-1 transition-all ease-in-out duration-500">
+                <li className="hover:scale-110 hover:-translate-y-1 transform hover:rotate-90 transition-all ease-in-out duration-500">
                   <BsFillMoonStarsFill
                     className="cursor-pointer text-xl dark:text-white"
                     onClick={() => setDarkMode(!darkMode)}
@@ -63,17 +63,29 @@ export default function Home() {
               </p>
             </div>
             <div className="text-3xl flex justify-center gap-8 py-3 dark:text-gray-200">
-              <a href="https://www.instagram.com/marmdhn_/" target="blank">
+              <a
+                href="https://www.instagram.com/marmdhn_/"
+                target="blank"
+                className="hover:scale-110 hover:-translate-y-1 transform transition-all ease-in-out duration-500"
+              >
                 <AiFillInstagram />
               </a>
-              <a href="https://www.linkedin.com/in/marmdhn/" target="blank">
+              <a
+                href="https://www.linkedin.com/in/marmdhn/"
+                target="blank"
+                className="hover:scale-110 hover:-translate-y-1 transform transition-all ease-in-out duration-500"
+              >
                 <AiFillLinkedin />
               </a>
-              <a href="https://github.com/makbarramadhan62" target="blank">
+              <a
+                href="https://github.com/makbarramadhan62"
+                target="blank"
+                className="hover:scale-110 hover:-translate-y-1 transform transition-all ease-in-out duration-500"
+              >
                 <AiFillGithub />
               </a>
             </div>
-            <div className="relative mx-auto bg-gradient-to-b from-cyan-500 rounded-full w-80 h-80 mt-8 overflow-hidden hover:grayscale hover:scale-110 transition-all ease-in-out duration-500 cursor-pointer">
+            <div className="relative mx-auto bg-gradient-to-b from-cyan-500 rounded-full w-80 h-80 mt-8 overflow-hidden hover:scale-110 transition-all ease-in-out duration-500 cursor-pointer">
               <Image src={profil} alt="profil-image" />
             </div>
           </section>
